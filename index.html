@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ነጃት የተፈጥሮ ማር - ንፁህ የተፈጥሮ ማር በቀላሉ ያግኙ </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Amharic Font (Example - You may need to find a more suitable one or load a local font) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Noto Sans Ethiopic', sans-serif; /* Amharic Font */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f4ef; /* Light, warm background */
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h1, h2, h3 {
+            color: #8c6f3d; /* Honey Brown */
+        }
+
+        a {
+            color: #b18d51; /* Another Honey Brown */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #634c2f; /* Darker Honey Brown */
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #f0ead6; /* Light Beige */
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .hero .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #e6b800; /* Bright Honey Gold */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero .cta-button:hover {
+            background-color: #cc9900; /* Darker Honey Gold */
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .benefits .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .benefits .benefit {
+            text-align: left;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .benefits .benefit:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefits .benefit i {
+            color: #e6b800; /* Bright Honey Gold */
+            margin-right: 10px;
+        }
+
+        /* Social Proof Section */
+        .social-proof {
+            background-color: #f5f0e1; /* Very Light Beige */
+            padding: 40px 0;
+        }
+
+        .social-proof h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .social-proof .testimonials {
+            display: flex;
+            overflow-x: auto;
+            padding-bottom: 20px; /* To prevent scrollbar from covering text */
+        }
+
+        .social-proof .testimonial {
+            min-width: 300px;
+            padding: 20px;
+            margin-right: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+            flex: none;
+        }
+
+        /* Product Section */
+        .product-section {
+            padding: 40px 0;
+        }
+
+        .product-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .product-section .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .product-section .product {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        .product-section .product img {
+            margin-bottom: 10px;
+        }
+
+        .product-section .product .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e6b800; /* Bright Honey Gold */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-section .product .cta-button:hover {
+            background-color: #cc9900; /* Darker Honey Gold */
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background-color: #f0ead6; /* Light Beige */
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #e6b800; /* Bright Honey Gold */
+            text-decoration: none;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .benefits .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-section .products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>ነጃት የተፈጥሮ ማር - የተፈጥሮን ጣዕም ያጣጥሙ </h1>
+            <p>ንጹህ፣ ያልተጣራ እና ተፈጥሯዊ ማር፣ በንፅህና በመተማመን ይግዙ ።</p>
+            <a href="#products" class="cta-button">ማራችንን ይግዙ</a>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits">
+            <h2>ነጃት የተፈጥሮ ማርን ለምን ይመርጣሉ?</h2>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <i class="fas fa-shield-alt fa-2x"></i>
+                    <h3>በተፈጥሮ በሽታ የመከላከል አቅምዎን ያሳድጉ</h3>
+                    <p>በማራችን ውስጥ የሚገኙት የተፈጥሮ ፀረ-ንጥረ-ምግቦች በሽታ የመከላከል አቅምዎን ለማጎልበት ይረዳሉ። </p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-burn fa-2x"></i>
+                    <h3>ያለ እርጅና የሚቆይ ጉልበት ያግኙ</h3>
+                    <p>ያለ ድካም በተፈጥሮ ጉልበት ያግኙ። ለአካል ብቃት እንቅስቃሴ፣ ለጤናማ መክሰስ ፍጹም ነው።</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-heart fa-2x"></i>
+                    <h3>ለጤናማ ልብ የተፈጥሮ ጣፋጭ</h3>
+                    <p>ጤናማ ያልሆኑ ስኳሮችን በተፈጥሮ ጣፋጭ ማር ይለውጡ። የልብ ጤናዎን ይጠብቁ።</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-soothing fa-2x"></i>
+                    <h3>የጉሮሮዎን ጤና ይጠብቁ </h3>
+                    <p>ከሳል እና ከጉሮሮ ህመም በተፈጥሮ እፎይታ ያግኙ። ማራችን የፀረ-ባክቴሪያ ባህሪያት አሉት።</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-spa fa-2x"></i>
+                    <h3>በተፈጥሮ ቆዳዎን ይመግቡ</h3>
+                    <p>የማርን የውበት ሚስጥር ያግኙ። ቆዳዎን ለማራስ እንደ የፊት ጭንብል ይጠቀሙ።</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Section -->
+        <section class="social-proof">
+            <h2>ደንበኞቻችን ምን ይላሉ</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"ነጃት ማር ምርጥ ነው! ንፁህና ያልተቀላቀለ የተፈጥሮ ማር ነው፣ ለቤተሰቤ ጤናማ ምግብ እየሰጠሁ እንደሆነ ይሰማኛል።"</p>
+                    <p>- ኑርየ ተፈራ.</p>
+                </div>
+                <div class="testimonial">
+                    <p>"ሁሉንም ጣፋጭ ምግቦቼን በነጃት ማር ቀይሬዋለሁ። በሻይዬ ውስጥ በጣም ጣፋጭ ነው፣ እና የማገኘውን የተፈጥሮ ኃይል እወዳለሁ።"</p>
+                    <p>- ኢሳ ዋሴ.</p>s
+                </div>
+                <!-- Add more testimonials here -->
+            </div>
+        </section>
+
+        <!-- Product Section -->
+        <section id="products" class="product-section">
+            <h2>የተፈጥሮ ማራችንን ይቃኙ</h2>
+            <p>ከምርጥ የአበባ ክልሎች የሚገኙትን ንጹህ የማር ዓይነቶቻችንን ይወቁ</p>
+            <div class="products-grid">
+                <div class="product">
+                    <img src="https://via.placeholder.com/300x200" alt="የዱር አበባ ማር">
+                    <h3>የዱር አበባ ማር - ውስብስብ እና ጠንካራ</h3>
+                    <p>የተለያዩ የዱር አበቦች ድብልቅ ነው, ውስብስብ እና ጠንካራ ጣዕም ይሰጣል. </p>
+                    <p>1000ብር </p>
+                    <a href="#" class="cta-button">አሁኑኑ ይዘዙ </a>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/300x200" alt="ክሎቨር ማር">
+                    <h3>ቀላል ጣዕም </h3>
+                    <p>ቀላል እና ለስላሳ, ለሻይ, ለቡና ወይም ለሚወዷቸው ጣፋጭ ምግቦች ተስማሚ ነው.</p>
+                    <p>950ብር </p>
+                    <a href="#" class="cta-button">አሁኑኑ ይዘዙ </a>
+                </div>
+                <!-- Add more product listings here -->
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2>የተፈጥሮን ጣፋጭነት ለመለማመድ ዝግጁ ነዎት?</h2>
+            <p>ዛሬ የነጃት የተፈጥሮ ማርዎን ይዘዙ እና ንጹህ ማር በህይወትዎ ውስጥ ምን ያህል ለውጥ እንደሚያመጣ ይወቁ</p>
+            <a href="#products" class="cta-button">የነጃት ማርን አሁን ይግዙ</a>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>ያግኙን: <a href="nejatmohammed2025@gmail.com">info@nejathoney.com</a> | ስልክ: 0914715526</p>
+            <p><a href="#">አድራሻችን ከሚሴ ኮንዶሚኒየም </a> | <a href="#">የማጓጓዣ መረጃ</a> | <a href="#">የግላዊነት መመሪያ</a></p>
+            <p>© 2024 ነጃት የተፈጥሮ ማር</p>
+        </div>
+    </footer>
+</body>
+</html>
